@@ -11,7 +11,7 @@ const Customers = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Customers" />
+      <Header category="August 2023" title="Customers Analysis" />
       <GridComponent
         dataSource={customersData}
         enableHover={false}
@@ -19,7 +19,7 @@ const Customers = () => {
         pageSettings={{ pageCount: 5 }}
         selectionSettings={selectionsettings}
         toolbar={toolbarOptions}
-        editSettings={editing}
+        // editSettings={editing}
         allowSorting
       >
         <ColumnsDirective>

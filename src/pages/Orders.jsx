@@ -8,7 +8,7 @@ const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Orders" />
+      <Header category="August 2023" title="Agent Analysis" />
       <GridComponent
         id="gridcomp"
         dataSource={ordersData}
@@ -17,7 +17,7 @@ const Orders = () => {
         allowExcelExport
         allowPdfExport
         contextMenuItems={contextMenuItems}
-        editSettings={editing}
+        // editSettings={editing}
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}

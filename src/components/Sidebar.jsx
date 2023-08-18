@@ -7,6 +7,8 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
+import logo from "../data/real_talk_logo.jpeg"
+
 const Sidebar = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
 
@@ -24,9 +26,16 @@ const Sidebar = () => {
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
-            <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-              <SiShopware /> <span>Shoppy</span>
+            {/* <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
+              <SiShopware /> 
+               <span>RealTalk</span>
             </Link>
+             */}
+            
+            <div style={{display:"flex", alignItems:"center", justifyContent:"center", marginTop:"30px"}} >
+              <img src={logo} alt="RealTalk" style={{ height: "30%", width: "30%", borderRadius:"50%" }} />
+            </div>
+            
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"
